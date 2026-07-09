@@ -7,6 +7,13 @@ import {
 import { Reveal, RevealStagger, revealItem } from "@/components/site/Reveal";
 import { Particles } from "@/components/site/Particles";
 
+type ServiceRoutePath =
+  | "/services/voice-agents"
+  | "/services/chat-agents"
+  | "/services/websites"
+  | "/services/automation"
+  | "/services/seo";
+
 export const Route = createFileRoute("/services/")({
   component: ServicesPage,
   head: () => ({
@@ -127,8 +134,7 @@ function ServicesPage() {
                         </Link>
                         {s.slug ? (
                           <Link
-                            to="/services/$slug"
-                            params={{ slug: s.slug }}
+                            to={`/services/${s.slug}` as ServiceRoutePath}
                             className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-cyan hover:text-white"
                           >
                             Learn more <ArrowRight size={14} />
