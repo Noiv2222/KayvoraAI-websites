@@ -1,0 +1,11 @@
+# Kayvora AI
+
+> Kayvora AI builds AI Voice Agents, Chatbots, Websites, Funnels, SEO, and Business Automations for growing businesses.
+
+## Pages
+
+- [Home](/): AI systems overview, services, process, industries, FAQ
+- [Services](/services): AI Voice Agents, AI Chat, AI Websites, Automation, SEO, Funnels
+- [Pricing](/pricing): One-time pricing for websites, AI services, and bundles
+- [About](/about): Mission and how we work with clients
+- [Contact](/contact): Book a free strategy call
