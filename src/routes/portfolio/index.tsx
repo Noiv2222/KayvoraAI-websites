@@ -60,6 +60,17 @@ function PortfolioIndexPage() {
                   </span>
                 ))}
               </div>
+
+              {/* Blinking "click to view" hint */}
+              <div className="flex items-center gap-2 mt-5 pt-4 border-t">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+                </span>
+                <span className="text-xs font-semibold text-primary group-hover:underline">
+                  Click to view case study
+                </span>
+              </div>
             </div>
           </Link>
         ))}
