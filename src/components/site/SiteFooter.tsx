@@ -80,6 +80,14 @@ export function SiteFooter() {
           <p className="text-xs text-white/50">
             © {new Date().getFullYear()} Kayvora AI. All rights reserved.
           </p>
+          <div className="flex items-center gap-4">
+            <Link to="/privacy" className="text-xs text-white/50 hover:text-white">
+              Privacy Policy
+            </Link>
+            <Link to="/terms" className="text-xs text-white/50 hover:text-white">
+              Terms of Service
+            </Link>
+          </div>
           <p className="text-xs text-white/40">
             Building AI systems that work while you sleep.
           </p>
