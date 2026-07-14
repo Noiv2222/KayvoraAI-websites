@@ -123,7 +123,7 @@ function TermsPage() {
           </Reveal>
           <Reveal delay={2}>
             <p className="mx-auto mt-5 max-w-2xl text-white/70">
-              Effective Date: [DD/MM/YYYY]
+              Effective Date: [16/4/2026]
             </p>
           </Reveal>
         </div>
