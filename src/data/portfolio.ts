@@ -45,7 +45,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Faster booking cycle for new patients",
       "Front-desk staff freed up for in-person care",
     ],
-    coverImage: "/portfolio/dental-clinic-cover.jpg",
+    coverImage: "/portfolio/dental-clinic-cover.svg",
     demoVideo: "/portfolio/dental-clinic-demo.mp4",
   },
   {
@@ -64,7 +64,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Automated follow-up reduces lost prospects",
       "Agents spend more time closing, less time chasing",
     ],
-    coverImage: "/portfolio/real-estate-cover.jpg",
+    coverImage: "/portfolio/real-estate-cover.svg",
     demoVideo: "/portfolio/real-estate-demo.mp4",
   },
   {
@@ -83,7 +83,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Reduced administrative workload for staff",
       "Improved first impression for prospective clients",
     ],
-    coverImage: "/portfolio/law-firm-cover.jpg",
+    coverImage: "/portfolio/law-firm-cover.svg",
     demoVideo: "/portfolio/law-firm-demo.mp4",
   },
   {
@@ -102,7 +102,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Reduced dispatcher workload",
       "Improved customer satisfaction scores",
     ],
-    coverImage: "/portfolio/hvac-cover.jpg",
+    coverImage: "/portfolio/hvac-cover.svg",
     demoVideo: "/portfolio/hvac-demo.mp4",
   },
   {
@@ -121,7 +121,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Better table utilization",
       "Improved guest experience from first contact",
     ],
-    coverImage: "/portfolio/restaurant-cover.jpg",
+    coverImage: "/portfolio/restaurant-cover.svg",
     demoVideo: "/portfolio/restaurant-demo.mp4",
   },
   {
@@ -140,7 +140,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Automated nurture for undecided leads",
       "Less manual follow-up work for staff",
     ],
-    coverImage: "/portfolio/gym-cover.jpg",
+    coverImage: "/portfolio/gym-cover.svg",
     demoVideo: "/portfolio/gym-demo.mp4",
   },
   {
@@ -159,7 +159,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Reduced drop-off during the quoting process",
       "Consistent, compliant intake conversations",
     ],
-    coverImage: "/portfolio/insurance-cover.jpg",
+    coverImage: "/portfolio/insurance-cover.svg",
     demoVideo: "/portfolio/insurance-demo.mp4",
   },
   {
@@ -178,7 +178,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Better qualified jobs reaching estimators",
       "Improved close rate on inbound calls",
     ],
-    coverImage: "/portfolio/roofing-cover.jpg",
+    coverImage: "/portfolio/roofing-cover.svg",
     demoVideo: "/portfolio/roofing-demo.mp4",
   },
   {
@@ -197,7 +197,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Reduced time spent on unqualified quotes",
       "More consistent client communication",
     ],
-    coverImage: "/portfolio/construction-cover.jpg",
+    coverImage: "/portfolio/construction-cover.svg",
     demoVideo: "/portfolio/construction-demo.mp4",
   },
   {
@@ -216,7 +216,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Faster sales cycle from inquiry to proposal",
       "More predictable pipeline growth",
     ],
-    coverImage: "/portfolio/marketing-agency-cover.jpg",
+    coverImage: "/portfolio/marketing-agency-cover.svg",
     demoVideo: "/portfolio/marketing-agency-demo.mp4",
   },
   {
@@ -235,7 +235,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Clear visibility into where leads come from",
       "Ongoing, measurable growth in local visibility",
     ],
-    coverImage: "/portfolio/local-seo-cover.jpg",
+    coverImage: "/portfolio/local-seo-cover.svg",
     demoVideo: "/portfolio/local-seo-demo.mp4",
   },
   {
@@ -254,7 +254,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Faster turnaround on routine processes",
       "Team time reallocated to higher-value work",
     ],
-    coverImage: "/portfolio/ai-workflow-automation-cover.jpg",
+    coverImage: "/portfolio/ai-workflow-automation-cover.svg",
     demoVideo: "/portfolio/ai-workflow-automation-demo.mp4",
   },
 ];

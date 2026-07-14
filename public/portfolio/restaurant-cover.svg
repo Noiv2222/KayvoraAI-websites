@@ -1,0 +1,49 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-restaurant" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="45%" stop-color="#2563EB"/>
+      <stop offset="75%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="overlay-restaurant" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.55"/>
+    </linearGradient>
+    <pattern id="grid-restaurant" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg-restaurant)"/>
+  <rect width="800" height="450" fill="url(#grid-restaurant)"/>
+  <rect width="800" height="450" fill="url(#overlay-restaurant)"/>
+
+  <!-- AI-Powered badge -->
+  <rect x="40" y="40" width="132" height="34" rx="17" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.25"/>
+  <circle cx="60" cy="57" r="4" fill="#22D3EE"/>
+  <text x="74" y="62" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">AI-POWERED</text>
+
+  <!-- Large emoji icon -->
+  <text x="60" y="230" font-family="Arial, Helvetica, sans-serif" font-size="90">🍽</text>
+
+  <!-- Title -->
+  <text x="60" y="380" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">Restaurant</text>
+  <text x="60" y="410" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#E2E8F0" fill-opacity="0.85">Kayvora AI Case Study</text>
+
+  <!-- Chat bubble mockup, bottom right -->
+  <g transform="translate(490,260)">
+    <rect x="0" y="0" width="270" height="150" rx="18" fill="#0F172A" fill-opacity="0.55" stroke="#FFFFFF" stroke-opacity="0.15"/>
+    <circle cx="30" cy="34" r="14" fill="#22D3EE"/>
+    <text x="30" y="39" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">AI</text>
+    <rect x="54" y="22" width="140" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.85"/>
+    <rect x="54" y="38" width="90" height="8" rx="4" fill="#FFFFFF" fill-opacity="0.5"/>
+
+    <rect x="20" y="66" width="230" height="1" fill="#FFFFFF" fill-opacity="0.15"/>
+
+    <circle cx="34" cy="104" r="15" fill="#22C55E"/>
+    <path d="M 27 104 L 32 109 L 42 97" stroke="#0F172A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="58" y="109" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Table reserved</text>
+  </g>
+</svg>
