@@ -106,6 +106,30 @@ function CaseStudyPage() {
         </Section>
       </div>
 
+      {/* Screenshot gallery — mockups showing what the solution looks like in action */}
+      {project.screenshots && project.screenshots.length > 0 && (
+        <div className="mt-14">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-4">
+            How It Looks In Action
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {project.screenshots.map((src, i) => (
+              <div
+                key={src}
+                className="rounded-xl overflow-hidden bg-muted aspect-[16/9] border border-border"
+              >
+                <img
+                  src={src}
+                  alt={`${project.title} interface mockup ${i + 1}`}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Optional demo video — only shows if you've added a demoVideo path */}
       {project.demoVideo && (
         <div className="mt-12">

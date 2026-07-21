@@ -1,0 +1,11 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" rx="16" fill="#F1F5F9"/>
+  <rect width="800" height="450" rx="16" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+  <path d="M0 16 A16 16 0 0 1 16 0 L784 0 A16 16 0 0 1 800 16 L800 44 L0 44 Z" fill="#FFFFFF"/>
+  <line x1="0" y1="44" x2="800" y2="44" stroke="#E2E8F0" stroke-width="2"/>
+  <circle cx="24" cy="22" r="6" fill="#F87171"/>
+  <circle cx="46" cy="22" r="6" fill="#FBBF24"/>
+  <circle cx="68" cy="22" r="6" fill="#34D399"/>
+  <rect x="100" y="10" width="600" height="24" rx="12" fill="#F1F5F9"/>
+  <text x="400.0" y="27" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#64748B" text-anchor="middle">kayvora-analytics.com</text>
+<rect x="50" y="64" width="700" height="300" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/><text x="70" y="94" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#0F172A">Local Search Visibility</text><rect x="90.0" y="236.47058823529412" width="66.0" height="63.529411764705884" rx="6" fill="#22D3EE"/><text x="123.0" y="318" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#64748B" text-anchor="middle">Jan</text><rect x="210.0" y="223.23529411764707" width="66.0" height="76.76470588235294" rx="6" fill="#22D3EE"/><text x="243.0" y="318" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#64748B" text-anchor="middle">Feb</text><rect x="330.0" y="188.8235294117647" width="66.0" height="111.1764705882353" rx="6" fill="#22D3EE"/><text x="363.0" y="318" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#64748B" text-anchor="middle">Mar</text><rect x="450.0" y="162.3529411764706" width="66.0" height="137.6470588235294" rx="6" fill="#22D3EE"/><text x="483.0" y="318" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#64748B" text-anchor="middle">Apr</text><rect x="570.0" y="120.0" width="66.0" height="180.0" rx="6" fill="#22D3EE"/><text x="603.0" y="318" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#64748B" text-anchor="middle">May</text></svg>

@@ -11,6 +11,10 @@
 // - technology: array of short tags (shown as pills/badges)
 // - benefits: array of short bullet points
 // - coverImage: path to an image in /public/portfolio/ (add the real file later)
+// - screenshots: array of 2-3 mockup image paths shown as a gallery on the case
+//   study page. These are illustrative UI mockups (not real client screenshots),
+//   styled to match each project's actual tech (voice call screen, chat widget,
+//   calendar booking, CRM dashboard, etc).
 // - demoVideo: optional path to a video in /public/portfolio/ — every project has a
 //   placeholder path already. The video player only shows up on a case study page
 //   once a real .mp4 file with that exact name exists in public/portfolio/.
@@ -25,6 +29,7 @@ export interface PortfolioProject {
   technology: string[];
   benefits: string[];
   coverImage: string;
+  screenshots?: string[];
   demoVideo?: string;
 }
 
@@ -46,6 +51,11 @@ export const portfolioProjects: PortfolioProject[] = [
       "Front-desk staff freed up for in-person care",
     ],
     coverImage: "/portfolio/dental-clinic-cover.svg",
+    screenshots: [
+      "/portfolio/dental-clinic-screenshot-1.svg",
+      "/portfolio/dental-clinic-screenshot-2.svg",
+      "/portfolio/dental-clinic-screenshot-3.svg",
+    ],
     demoVideo: "/portfolio/dental-clinic-demo.mp4",
   },
   {
@@ -65,6 +75,11 @@ export const portfolioProjects: PortfolioProject[] = [
       "Agents spend more time closing, less time chasing",
     ],
     coverImage: "/portfolio/real-estate-cover.svg",
+    screenshots: [
+      "/portfolio/real-estate-screenshot-1.svg",
+      "/portfolio/real-estate-screenshot-2.svg",
+      "/portfolio/real-estate-screenshot-3.svg",
+    ],
     demoVideo: "/portfolio/real-estate-demo.mp4",
   },
   {
@@ -84,6 +99,11 @@ export const portfolioProjects: PortfolioProject[] = [
       "Improved first impression for prospective clients",
     ],
     coverImage: "/portfolio/law-firm-cover.svg",
+    screenshots: [
+      "/portfolio/law-firm-screenshot-1.svg",
+      "/portfolio/law-firm-screenshot-2.svg",
+      "/portfolio/law-firm-screenshot-3.svg",
+    ],
     demoVideo: "/portfolio/law-firm-demo.mp4",
   },
   {
@@ -103,6 +123,11 @@ export const portfolioProjects: PortfolioProject[] = [
       "Improved customer satisfaction scores",
     ],
     coverImage: "/portfolio/hvac-cover.svg",
+    screenshots: [
+      "/portfolio/hvac-screenshot-1.svg",
+      "/portfolio/hvac-screenshot-2.svg",
+      "/portfolio/hvac-screenshot-3.svg",
+    ],
     demoVideo: "/portfolio/hvac-demo.mp4",
   },
   {
@@ -122,6 +147,11 @@ export const portfolioProjects: PortfolioProject[] = [
       "Improved guest experience from first contact",
     ],
     coverImage: "/portfolio/restaurant-cover.svg",
+    screenshots: [
+      "/portfolio/restaurant-screenshot-1.svg",
+      "/portfolio/restaurant-screenshot-2.svg",
+      "/portfolio/restaurant-screenshot-3.svg",
+    ],
     demoVideo: "/portfolio/restaurant-demo.mp4",
   },
   {
@@ -141,6 +171,11 @@ export const portfolioProjects: PortfolioProject[] = [
       "Less manual follow-up work for staff",
     ],
     coverImage: "/portfolio/gym-cover.svg",
+    screenshots: [
+      "/portfolio/gym-screenshot-1.svg",
+      "/portfolio/gym-screenshot-2.svg",
+      "/portfolio/gym-screenshot-3.svg",
+    ],
     demoVideo: "/portfolio/gym-demo.mp4",
   },
   {
@@ -160,6 +195,11 @@ export const portfolioProjects: PortfolioProject[] = [
       "Consistent, compliant intake conversations",
     ],
     coverImage: "/portfolio/insurance-cover.svg",
+    screenshots: [
+      "/portfolio/insurance-screenshot-1.svg",
+      "/portfolio/insurance-screenshot-2.svg",
+      "/portfolio/insurance-screenshot-3.svg",
+    ],
     demoVideo: "/portfolio/insurance-demo.mp4",
   },
   {
@@ -179,6 +219,11 @@ export const portfolioProjects: PortfolioProject[] = [
       "Improved close rate on inbound calls",
     ],
     coverImage: "/portfolio/roofing-cover.svg",
+    screenshots: [
+      "/portfolio/roofing-screenshot-1.svg",
+      "/portfolio/roofing-screenshot-2.svg",
+      "/portfolio/roofing-screenshot-3.svg",
+    ],
     demoVideo: "/portfolio/roofing-demo.mp4",
   },
   {
@@ -198,6 +243,11 @@ export const portfolioProjects: PortfolioProject[] = [
       "More consistent client communication",
     ],
     coverImage: "/portfolio/construction-cover.svg",
+    screenshots: [
+      "/portfolio/construction-screenshot-1.svg",
+      "/portfolio/construction-screenshot-2.svg",
+      "/portfolio/construction-screenshot-3.svg",
+    ],
     demoVideo: "/portfolio/construction-demo.mp4",
   },
   {
@@ -217,6 +267,11 @@ export const portfolioProjects: PortfolioProject[] = [
       "More predictable pipeline growth",
     ],
     coverImage: "/portfolio/marketing-agency-cover.svg",
+    screenshots: [
+      "/portfolio/marketing-agency-screenshot-1.svg",
+      "/portfolio/marketing-agency-screenshot-2.svg",
+      "/portfolio/marketing-agency-screenshot-3.svg",
+    ],
     demoVideo: "/portfolio/marketing-agency-demo.mp4",
   },
   {
@@ -236,6 +291,11 @@ export const portfolioProjects: PortfolioProject[] = [
       "Ongoing, measurable growth in local visibility",
     ],
     coverImage: "/portfolio/local-seo-cover.svg",
+    screenshots: [
+      "/portfolio/local-seo-screenshot-1.svg",
+      "/portfolio/local-seo-screenshot-2.svg",
+      "/portfolio/local-seo-screenshot-3.svg",
+    ],
     demoVideo: "/portfolio/local-seo-demo.mp4",
   },
   {
@@ -255,6 +315,11 @@ export const portfolioProjects: PortfolioProject[] = [
       "Team time reallocated to higher-value work",
     ],
     coverImage: "/portfolio/ai-workflow-automation-cover.svg",
+    screenshots: [
+      "/portfolio/ai-workflow-automation-screenshot-1.svg",
+      "/portfolio/ai-workflow-automation-screenshot-2.svg",
+      "/portfolio/ai-workflow-automation-screenshot-3.svg",
+    ],
     demoVideo: "/portfolio/ai-workflow-automation-demo.mp4",
   },
 ];
