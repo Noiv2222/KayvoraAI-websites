@@ -56,7 +56,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "/portfolio/dental-clinic-screenshot-2.svg",
       "/portfolio/dental-clinic-screenshot-3.svg",
     ],
-    demoVideo: "/portfolio/dental-clinic-demo.mp4",
+    demoVideo: "/portfolio/",
   },
   {
     slug: "real-estate",
