@@ -130,15 +130,18 @@ function CaseStudyPage() {
         </div>
       )}
 
-      {/* Optional demo video — only shows if you've added a demoVideo path */}
-      {project.demoVideo && (
-        <div className="mt-12">
-          <h2 className="text-xl font-semibold mb-4">Demo</h2>
+      <div className="mt-12">
+        <h2 className="text-xl font-semibold mb-4">Demo</h2>
+        {project.demoVideo ? (
           <video controls className="w-full rounded-2xl">
             <source src={project.demoVideo} type="video/mp4" />
           </video>
-        </div>
-      )}
+        ) : (
+          <div className="rounded-2xl border border-dashed border-border bg-muted p-8 text-center text-sm text-muted-foreground">
+            Demo videos coming soon.
+          </div>
+        )}
+      </div>
 
       {/* CTA footer */}
       <div className="mt-16 pt-10 border-t text-center">
