@@ -1,49 +1,36 @@
-<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg-local-seo" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F172A"/>
-      <stop offset="45%" stop-color="#2563EB"/>
-      <stop offset="75%" stop-color="#7C3AED"/>
-      <stop offset="100%" stop-color="#22D3EE"/>
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg"><defs>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bgfade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF2FF"/>
     </linearGradient>
-    <linearGradient id="overlay-local-seo" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0F172A" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.55"/>
-    </linearGradient>
-    <pattern id="grid-local-seo" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1"/>
+    <pattern id="dotgrid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#0F172A" fill-opacity="0.06"/>
     </pattern>
-  </defs>
-
-  <!-- Background -->
-  <rect width="800" height="450" fill="url(#bg-local-seo)"/>
-  <rect width="800" height="450" fill="url(#grid-local-seo)"/>
-  <rect width="800" height="450" fill="url(#overlay-local-seo)"/>
-
-  <!-- AI-Powered badge -->
-  <rect x="40" y="40" width="132" height="34" rx="17" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.25"/>
-  <circle cx="60" cy="57" r="4" fill="#22D3EE"/>
-  <text x="74" y="62" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">AI-POWERED</text>
-
-  <!-- Large emoji icon -->
-  <text x="60" y="230" font-family="Arial, Helvetica, sans-serif" font-size="90">📍</text>
-
-  <!-- Title -->
-  <text x="60" y="380" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">Local SEO</text>
-  <text x="60" y="410" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#E2E8F0" fill-opacity="0.85">Kayvora AI Case Study</text>
-
-  <!-- Chat bubble mockup, bottom right -->
-  <g transform="translate(490,260)">
-    <rect x="0" y="0" width="270" height="150" rx="18" fill="#0F172A" fill-opacity="0.55" stroke="#FFFFFF" stroke-opacity="0.15"/>
-    <circle cx="30" cy="34" r="14" fill="#22D3EE"/>
-    <text x="30" y="39" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">AI</text>
-    <rect x="54" y="22" width="140" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.85"/>
-    <rect x="54" y="38" width="90" height="8" rx="4" fill="#FFFFFF" fill-opacity="0.5"/>
-
-    <rect x="20" y="66" width="230" height="1" fill="#FFFFFF" fill-opacity="0.15"/>
-
-    <circle cx="34" cy="104" r="15" fill="#22C55E"/>
-    <path d="M 27 104 L 32 109 L 42 97" stroke="#0F172A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="58" y="109" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Ranking improved</text>
+    <filter id="dshadow" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.22"/>
+    </filter>
+    <filter id="chipshadow" x="-80%" y="-80%" width="260%" height="260%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.18"/>
+    </filter>
+  </defs><rect width="800" height="450" fill="url(#bgfade)"/>
+  <rect width="800" height="450" fill="url(#dotgrid)"/>
+  <circle cx="620" cy="90" r="220" fill="url(#glow1)"/>
+  <circle cx="700" cy="380" r="180" fill="url(#glow2)"/><rect x="48" y="46" width="150" height="32" rx="16" fill="#22D3EE" fill-opacity="0.12"/>
+  <circle cx="66" cy="62" r="4" fill="#22D3EE"/>
+  <text x="80" y="67" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#22D3EE" letter-spacing="0.5">AI-POWERED</text>
+  <text x="48" y="150" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#0F172A">📍  Local SEO</text>
+  <text x="48" y="178" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#64748B">Local Business &amp; SEO Services</text><g transform="translate(430,60) rotate(-3)" filter="url(#dshadow)"><rect x="0" y="0" width="260" height="300" rx="16" fill="#FFFFFF"/><rect x="0" y="0" width="260" height="46" rx="16" fill="#22D3EE"/><rect x="0" y="30" width="260" height="16" fill="#22D3EE"/><circle cx="24" cy="23" r="11" fill="#FFFFFF" fill-opacity="0.9"/><text x="24" y="27" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" fill="#22D3EE" text-anchor="middle">AI</text><text x="44" y="27" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700" fill="#FFFFFF">Site Assistant</text><rect x="100.80000000000001" y="66" width="145.2" height="30" rx="10" fill="#22D3EE"/><text x="111.80000000000001" y="82" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#FFFFFF">Do you serve downtown?</text><rect x="14" y="106" width="111.6" height="44" rx="10" fill="#F1F5F9"/><text x="25" y="122" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#0F172A">Yes! Book a free</text><text x="25" y="136" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#0F172A">consult?</text></g><g filter="url(#chipshadow)">
+    <rect x="60" y="356" width="168.0" height="56" rx="14" fill="#FFFFFF"/>
   </g>
-</svg>
+  <circle cx="86" cy="384" r="14" fill="#22C55E"/>
+  <path d="M 79 384 L 84 389 L 94 377" stroke="#FFFFFF" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="108" y="380" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" fill="#0F172A">+3x</text>
+  <text x="108" y="396" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#64748B">Search visibility</text></svg>

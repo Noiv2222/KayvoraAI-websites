@@ -1,49 +1,36 @@
-<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg-ai-workflow-automation" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F172A"/>
-      <stop offset="45%" stop-color="#2563EB"/>
-      <stop offset="75%" stop-color="#7C3AED"/>
-      <stop offset="100%" stop-color="#22D3EE"/>
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg"><defs>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bgfade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF2FF"/>
     </linearGradient>
-    <linearGradient id="overlay-ai-workflow-automation" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0F172A" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.55"/>
-    </linearGradient>
-    <pattern id="grid-ai-workflow-automation" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1"/>
+    <pattern id="dotgrid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#0F172A" fill-opacity="0.06"/>
     </pattern>
-  </defs>
-
-  <!-- Background -->
-  <rect width="800" height="450" fill="url(#bg-ai-workflow-automation)"/>
-  <rect width="800" height="450" fill="url(#grid-ai-workflow-automation)"/>
-  <rect width="800" height="450" fill="url(#overlay-ai-workflow-automation)"/>
-
-  <!-- AI-Powered badge -->
-  <rect x="40" y="40" width="132" height="34" rx="17" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.25"/>
-  <circle cx="60" cy="57" r="4" fill="#22D3EE"/>
-  <text x="74" y="62" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">AI-POWERED</text>
-
-  <!-- Large emoji icon -->
-  <text x="60" y="230" font-family="Arial, Helvetica, sans-serif" font-size="90">⚙</text>
-
-  <!-- Title -->
-  <text x="60" y="380" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">AI Workflow</text>
-  <text x="60" y="410" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#E2E8F0" fill-opacity="0.85">Kayvora AI Case Study</text>
-
-  <!-- Chat bubble mockup, bottom right -->
-  <g transform="translate(490,260)">
-    <rect x="0" y="0" width="270" height="150" rx="18" fill="#0F172A" fill-opacity="0.55" stroke="#FFFFFF" stroke-opacity="0.15"/>
-    <circle cx="30" cy="34" r="14" fill="#22D3EE"/>
-    <text x="30" y="39" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">AI</text>
-    <rect x="54" y="22" width="140" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.85"/>
-    <rect x="54" y="38" width="90" height="8" rx="4" fill="#FFFFFF" fill-opacity="0.5"/>
-
-    <rect x="20" y="66" width="230" height="1" fill="#FFFFFF" fill-opacity="0.15"/>
-
-    <circle cx="34" cy="104" r="15" fill="#22C55E"/>
-    <path d="M 27 104 L 32 109 L 42 97" stroke="#0F172A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="58" y="109" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Workflow completed</text>
+    <filter id="dshadow" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.22"/>
+    </filter>
+    <filter id="chipshadow" x="-80%" y="-80%" width="260%" height="260%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.18"/>
+    </filter>
+  </defs><rect width="800" height="450" fill="url(#bgfade)"/>
+  <rect width="800" height="450" fill="url(#dotgrid)"/>
+  <circle cx="620" cy="90" r="220" fill="url(#glow1)"/>
+  <circle cx="700" cy="380" r="180" fill="url(#glow2)"/><rect x="48" y="46" width="150" height="32" rx="16" fill="#7C3AED" fill-opacity="0.12"/>
+  <circle cx="66" cy="62" r="4" fill="#7C3AED"/>
+  <text x="80" y="67" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#7C3AED" letter-spacing="0.5">AI-POWERED</text>
+  <text x="48" y="150" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="800" fill="#0F172A">⚙  AI Workflow Automation</text>
+  <text x="48" y="178" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#64748B">Cross-Industry Business Operations</text><g transform="translate(435,190) rotate(0)" filter="url(#dshadow)"><rect x="0" y="0" width="340" height="220" rx="14" fill="#FFFFFF"/><rect x="12.5" y="84.0" width="90" height="52" rx="9" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2"/><text x="57.5" y="108.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#0F172A" text-anchor="middle">New Form</text><text x="57.5" y="121.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#0F172A" text-anchor="middle">Submitted</text><rect x="87.5" y="84.0" width="90" height="52" rx="9" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/><text x="132.5" y="108.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#0F172A" text-anchor="middle">AI Reviews</text><text x="132.5" y="121.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#0F172A" text-anchor="middle">Data</text><rect x="162.5" y="84.0" width="90" height="52" rx="9" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2"/><text x="207.5" y="108.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#0F172A" text-anchor="middle">CRM Updated</text><rect x="237.5" y="84.0" width="90" height="52" rx="9" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/><text x="282.5" y="108.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#0F172A" text-anchor="middle">Follow-up</text><text x="282.5" y="121.0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#0F172A" text-anchor="middle">Sent</text><line x1="102.5" y1="110.0" x2="87.5" y2="110.0" stroke="#64748B" stroke-width="2"/><circle cx="87.5" cy="110.0" r="2.5" fill="#64748B"/><line x1="177.5" y1="110.0" x2="162.5" y2="110.0" stroke="#64748B" stroke-width="2"/><circle cx="162.5" cy="110.0" r="2.5" fill="#64748B"/><line x1="252.5" y1="110.0" x2="237.5" y2="110.0" stroke="#64748B" stroke-width="2"/><circle cx="237.5" cy="110.0" r="2.5" fill="#64748B"/></g><g filter="url(#chipshadow)">
+    <rect x="60" y="356" width="168.0" height="56" rx="14" fill="#FFFFFF"/>
   </g>
-</svg>
+  <circle cx="86" cy="384" r="14" fill="#22C55E"/>
+  <path d="M 79 384 L 84 389 L 94 377" stroke="#FFFFFF" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="108" y="380" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" fill="#0F172A">23</text>
+  <text x="108" y="396" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#64748B">Hours saved / week</text></svg>

@@ -1,4 +1,12 @@
 <svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="soft-shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.16"/>
+    </filter>
+    <filter id="soft-shadow-sm" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#0F172A" flood-opacity="0.14"/>
+    </filter>
+  </defs>
   <rect width="800" height="450" rx="16" fill="#F1F5F9"/>
   <rect width="800" height="450" rx="16" fill="none" stroke="#E2E8F0" stroke-width="2"/>
   <path d="M0 16 A16 16 0 0 1 16 0 L784 0 A16 16 0 0 1 800 16 L800 44 L0 44 Z" fill="#FFFFFF"/>
