@@ -209,9 +209,12 @@ function AuditForm() {
     email: '',
     business: '',
     website: '',
+    challenges: '',
   })
 
-  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+  function handleChange(
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) {
     setValues((v) => ({ ...v, [e.target.name]: e.target.value }))
   }
 
@@ -231,6 +234,7 @@ function AuditForm() {
           email: values.email,
           business_name: values.business,
           website: values.website,
+          challenges: values.challenges,
         }),
       })
       const data = await res.json()
@@ -308,6 +312,13 @@ function AuditForm() {
                   placeholder="yourbusiness.com"
                   required
                 />
+                <TextAreaField
+                  label="What problems or challenges are you looking to improve?"
+                  name="challenges"
+                  value={values.challenges}
+                  onChange={handleChange}
+                  placeholder="e.g. slow website, not enough leads, too much manual admin work…"
+                />
 
                 <button
                   type="submit"
@@ -360,6 +371,37 @@ function Field({
         placeholder={placeholder}
         required={required}
         className="mt-1.5 w-full rounded-lg border border-white/10 bg-[#0B1220] px-4 py-2.5 font-['Inter'] text-slate-100 placeholder:text-slate-600 focus:outline-none focus:ring-2 focus:ring-cyan-400/60"
+      />
+    </label>
+  )
+}
+
+function TextAreaField({
+  label,
+  name,
+  value,
+  onChange,
+  placeholder,
+  required,
+}: {
+  label: string
+  name: string
+  value: string
+  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void
+  placeholder?: string
+  required?: boolean
+}) {
+  return (
+    <label className="block">
+      <span className="font-['Inter'] text-sm text-slate-300">{label}</span>
+      <textarea
+        name={name}
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+        required={required}
+        rows={3}
+        className="mt-1.5 w-full resize-none rounded-lg border border-white/10 bg-[#0B1220] px-4 py-2.5 font-['Inter'] text-slate-100 placeholder:text-slate-600 focus:outline-none focus:ring-2 focus:ring-cyan-400/60"
       />
     </label>
   )
