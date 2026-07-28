@@ -30,10 +30,30 @@ const WEB3FORMS_KEY = '9ae1a180-fa98-42f5-8d90-2ab60787e585'
 function FreeAuditPage() {
   return (
     <main className="min-h-screen bg-[#0F172A] text-slate-100 overflow-x-hidden">
+      <Header />
       <Hero />
       <HowItWorks />
       <AuditForm />
     </main>
+  )
+}
+
+// ─────────────────────────────────────────────────────────────
+// HEADER — logo only, kept minimal so it doesn't compete with
+// the hero's headline. Swap the src below for wherever the
+// logo file actually lives once it's added to /public.
+// ─────────────────────────────────────────────────────────────
+function Header() {
+  return (
+    <header className="relative px-6 pt-6">
+      <div className="mx-auto max-w-6xl flex items-center">
+        <img
+          src="/kayvora-logo.png"
+          alt="Kayvora AI"
+          className="h-10 w-10 md:h-12 md:w-12 rounded-full"
+        />
+      </div>
+    </header>
   )
 }
 
