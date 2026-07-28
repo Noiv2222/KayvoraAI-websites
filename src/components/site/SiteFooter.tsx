@@ -17,7 +17,7 @@ export function SiteFooter() {
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-brand opacity-60" />
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-4 lg:px-8">
         <div className="md:col-span-2">
-          <Logo size={40} />
+          <Logo size={64} />
           <p className="mt-4 max-w-sm text-sm text-white/60">
             AI Voice Agents, Chatbots, Websites, Funnels, SEO and Automations —
             built to help ambitious businesses generate more leads and scale
