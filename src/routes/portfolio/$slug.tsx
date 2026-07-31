@@ -9,6 +9,7 @@
 
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { portfolioProjects } from "@/data/portfolio";
+import { PasswordGate } from "@/components/site/PasswordGate";
 
 export const Route = createFileRoute("/portfolio/$slug")({
   component: CaseStudyPage,
@@ -21,6 +22,7 @@ function CaseStudyPage() {
   // If someone visits a slug that doesn't exist, show a friendly fallback
   if (!project) {
     return (
+      <PasswordGate pageKey="portfolio">
       <div className="max-w-2xl mx-auto py-24 px-6 text-center">
         <h1 className="text-2xl font-semibold mb-4">Project not found</h1>
         <p className="text-muted-foreground mb-6">
@@ -33,10 +35,12 @@ function CaseStudyPage() {
           Back to Portfolio
         </Link>
       </div>
+      </PasswordGate>
     );
   }
 
   return (
+    <PasswordGate pageKey="portfolio">
     <div className="max-w-4xl mx-auto py-16 px-6">
       {/* Breadcrumb back link */}
       <Link
@@ -156,6 +160,7 @@ function CaseStudyPage() {
         </Link>
       </div>
     </div>
+    </PasswordGate>
   );
 }
 
