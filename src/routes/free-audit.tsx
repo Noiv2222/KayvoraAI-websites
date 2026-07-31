@@ -43,7 +43,13 @@ function Header() {
   return (
     <header className="relative px-6 py-6">
       <div className="mx-auto max-w-6xl flex items-center justify-between">
-        <Logo size={34} />
+        <div className="flex items-center gap-3">
+          <Logo size={34} />
+          <span className="font-['Sora'] font-semibold text-lg text-white tracking-tight">
+            Kayvora AI{' '}
+            <span className="text-cyan-300">(FREE AUDIT)</span>
+          </span>
+        </div>
         <a
           href="/contact"
           className="hidden sm:inline-flex items-center rounded-lg border border-white/10 px-4 py-2 font-['Inter'] text-sm text-slate-200 hover:bg-white/5 transition"
