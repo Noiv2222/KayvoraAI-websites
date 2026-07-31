@@ -8,6 +8,7 @@ const services = [
   { to: "/services/websites", label: "AI Websites" },
   { to: "/services/seo", label: "AI SEO" },
   { to: "/services/automation", label: "AI Automation" },
+  { to: "/pricing", label: "Pricing" },
 ] as const;
 
 export function SiteFooter() {
@@ -50,6 +51,7 @@ export function SiteFooter() {
           <h4 className="text-sm font-semibold text-white">Company</h4>
           <ul className="mt-4 space-y-2">
             <li><Link to="/about" className="text-sm text-white/60 hover:text-white">About</Link></li>
+            <li><Link to="/portfolio" className="text-sm text-white/60 hover:text-white">Portfolio</Link></li>
             <li><Link to="/blog" className="text-sm text-white/60 hover:text-white">Blog</Link></li>
             <li><Link to="/contact" className="text-sm text-white/60 hover:text-white">Contact</Link></li>
           </ul>
