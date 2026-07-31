@@ -8,7 +8,6 @@ const services = [
   { to: "/services/websites", label: "AI Websites" },
   { to: "/services/seo", label: "AI SEO" },
   { to: "/services/automation", label: "AI Automation" },
-  { to: "/pricing", label: "Pricing" },
 ] as const;
 
 export function SiteFooter() {
