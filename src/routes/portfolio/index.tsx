@@ -20,7 +20,7 @@ function PortfolioIndexPage() {
       <div className="text-center mb-14">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Portfolio</h1>
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-          A look at how Kayvora AI builds custom AI voice agents, chat agents,
+          A look at how Voltix AI builds custom AI voice agents, chat agents,
           and automation systems across different industries.
         </p>
       </div>

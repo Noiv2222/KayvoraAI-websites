@@ -9,9 +9,9 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
   head: () => ({
     meta: [
-      { title: "About — Kayvora AI" },
-      { name: "description", content: "Kayvora AI helps businesses adopt AI automation without becoming AI experts themselves." },
-      { property: "og:title", content: "About — Kayvora AI" },
+      { title: "About — Voltix AI" },
+      { name: "description", content: "Voltix AI helps businesses adopt AI automation without becoming AI experts themselves." },
+      { property: "og:title", content: "About — Voltix AI" },
       { property: "og:description", content: "Our mission: make world-class AI systems accessible to every ambitious business." },
       { property: "og:image", content: "/pexels-photo-6803523.png" },
       { name: "twitter:image", content: "/pexels-photo-6803523.png" },
@@ -40,7 +40,7 @@ function AboutPage() {
         </div>
         <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6">
           <Reveal>
-            <span className="text-xs font-semibold uppercase tracking-widest text-brand-cyan">About Kayvora AI</span>
+            <span className="text-xs font-semibold uppercase tracking-widest text-brand-cyan">About Voltix AI</span>
           </Reveal>
           <Reveal delay={1}>
             <h1 className="mt-3 font-display text-4xl font-bold text-white sm:text-6xl">
@@ -49,7 +49,7 @@ function AboutPage() {
           </Reveal>
           <Reveal delay={2}>
             <p className="mx-auto mt-5 max-w-2xl text-white/70">
-              Kayvora AI helps ambitious businesses adopt AI automation without
+              Voltix AI helps ambitious businesses adopt AI automation without
               needing to become AI experts themselves. We design and ship the
               systems — you keep running your business.
             </p>
@@ -110,7 +110,7 @@ function AboutPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
-              <span className="text-xs font-semibold uppercase tracking-widest text-brand-cyan">Why Kayvora AI</span>
+              <span className="text-xs font-semibold uppercase tracking-widest text-brand-cyan">Why Voltix AI</span>
             </Reveal>
             <Reveal delay={1}>
               <h2 className="mt-3 text-3xl font-bold text-white sm:text-5xl">

@@ -18,9 +18,9 @@ export const Route = createFileRoute("/services/")({
   component: ServicesPage,
   head: () => ({
     meta: [
-      { title: "Services — Kayvora AI" },
+      { title: "Services — Voltix AI" },
       { name: "description", content: "AI Voice Agents, Chatbots, Websites, Automation, SEO, and Funnels — full-stack AI systems for growing businesses." },
-      { property: "og:title", content: "Services — Kayvora AI" },
+      { property: "og:title", content: "Services — Voltix AI" },
       { property: "og:description", content: "Six AI services designed to help you generate more leads and scale faster." },
     ],
   }),

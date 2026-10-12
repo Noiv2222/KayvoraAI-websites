@@ -39,9 +39,9 @@ export const Route = createFileRoute("/services/voice-agents")({
   ),
   head: () => ({
     meta: [
-      { title: "AI Voice Agents — Kayvora AI" },
+      { title: "AI Voice Agents — Voltix AI" },
       { name: "description", content: "24/7 AI receptionist that answers calls, qualifies leads, and books appointments — with every conversation synced to your CRM." },
-      { property: "og:title", content: "AI Voice Agents — Kayvora AI" },
+      { property: "og:title", content: "AI Voice Agents — Voltix AI" },
       { property: "og:description", content: "Never miss another call — or another lead." },
     ],
   }),

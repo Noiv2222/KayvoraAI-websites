@@ -39,9 +39,9 @@ export const Route = createFileRoute("/services/automation")({
   ),
   head: () => ({
     meta: [
-      { title: "AI Automation — Kayvora AI" },
+      { title: "AI Automation — Voltix AI" },
       { name: "description", content: "Automate CRM, email, scheduling, and lead routing across your existing tools." },
-      { property: "og:title", content: "AI Automation — Kayvora AI" },
+      { property: "og:title", content: "AI Automation — Voltix AI" },
       { property: "og:description", content: "Put your busywork on autopilot." },
     ],
   }),

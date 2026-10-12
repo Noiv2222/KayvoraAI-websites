@@ -10,9 +10,9 @@ export const Route = createFileRoute("/pricing")({
   component: PricingPage,
   head: () => ({
     meta: [
-      { title: "Pricing — Kayvora AI" },
+      { title: "Pricing — Voltix AI" },
       { name: "description", content: "Simple, transparent pricing for AI Voice Agents, Chatbots, Websites, Automation, SEO, and Funnels — one-time setup with optional monthly care plans." },
-      { property: "og:title", content: "Pricing — Kayvora AI" },
+      { property: "og:title", content: "Pricing — Voltix AI" },
       { property: "og:description", content: "One-time setup from $299, with optional monthly maintenance plans." },
     ],
   }),

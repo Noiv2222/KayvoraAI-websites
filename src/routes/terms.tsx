@@ -6,16 +6,16 @@ export const Route = createFileRoute("/terms")({
   component: TermsPage,
   head: () => ({
     meta: [
-      { title: "Terms of Service — Kayvora AI" },
+      { title: "Terms of Service — Voltix AI" },
       {
         name: "description",
         content:
-          "Kayvora AI's Terms of Service — project scope, payments, revisions, IP, and liability.",
+          "Voltix AI's Terms of Service — project scope, payments, revisions, IP, and liability.",
       },
-      { property: "og:title", content: "Terms of Service — Kayvora AI" },
+      { property: "og:title", content: "Terms of Service — Voltix AI" },
       {
         property: "og:description",
-        content: "The terms that apply when you use Kayvora AI's website or services.",
+        content: "The terms that apply when you use Voltix AI's website or services.",
       },
     ],
   }),
@@ -30,7 +30,7 @@ type Section = {
 const sections: Section[] = [
   {
     heading: "1. Services",
-    body: "Kayvora AI provides services including:",
+    body: "Voltix AI provides services including:",
     list: [
       "AI Voice Agents",
       "AI Chatbots",
@@ -78,15 +78,15 @@ const sections: Section[] = [
   },
   {
     heading: "6. Intellectual Property",
-    body: "Upon full payment, the client receives ownership of the agreed final deliverables unless otherwise stated. Kayvora AI retains ownership of its internal tools, templates, methodologies, and reusable components.",
+    body: "Upon full payment, the client receives ownership of the agreed final deliverables unless otherwise stated. Voltix AI retains ownership of its internal tools, templates, methodologies, and reusable components.",
   },
   {
     heading: "7. Limitation of Liability",
-    body: "Kayvora AI is not liable for indirect, incidental, or consequential damages arising from the use of our services. Our total liability is limited to the amount paid for the relevant service, to the extent permitted by law.",
+    body: "Voltix AI is not liable for indirect, incidental, or consequential damages arising from the use of our services. Our total liability is limited to the amount paid for the relevant service, to the extent permitted by law.",
   },
   {
     heading: "8. Third-Party Services",
-    body: "Some solutions rely on third-party platforms, APIs, or software. Their availability, pricing, or policies may change independently of Kayvora AI.",
+    body: "Some solutions rely on third-party platforms, APIs, or software. Their availability, pricing, or policies may change independently of Voltix AI.",
   },
   {
     heading: "9. Service Availability",
@@ -98,7 +98,7 @@ const sections: Section[] = [
   },
   {
     heading: "11. Governing Law",
-    body: "These Terms shall be governed by the laws applicable to the jurisdiction agreed upon in the client contract or, if no agreement exists, the laws applicable to Kayvora AI's principal place of business.",
+    body: "These Terms shall be governed by the laws applicable to the jurisdiction agreed upon in the client contract or, if no agreement exists, the laws applicable to Voltix AI's principal place of business.",
   },
 ];
 
@@ -132,7 +132,7 @@ function TermsPage() {
       <section className="relative mx-auto max-w-3xl px-4 pb-24 sm:px-6">
         <Reveal>
           <p className="text-white/70">
-            Welcome to Kayvora AI. By using our website or purchasing our
+            Welcome to Voltix AI. By using our website or purchasing our
             services, you agree to these Terms of Service.
           </p>
         </Reveal>
@@ -167,7 +167,7 @@ function TermsPage() {
               <h2 className="font-display text-xl font-semibold text-white">
                 12. Contact
               </h2>
-              <p className="mt-3 text-white/70">Kayvora AI</p>
+              <p className="mt-3 text-white/70">Voltix AI</p>
               <a
                 href="mailto:kayvora.ai@gmail.com"
                 className="mt-1 inline-block text-brand-cyan hover:text-white"

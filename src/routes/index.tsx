@@ -242,7 +242,7 @@ function Capabilities() {
           </Reveal>
           <Reveal delay={2}>
             <p className="mx-auto mt-4 text-white/60">
-              Every Kayvora AI system is built around these core strengths.
+              Every Voltix AI system is built around these core strengths.
             </p>
           </Reveal>
         </div>
@@ -579,7 +579,7 @@ function ContactCTA() {
                   <Mail size={16} /> Email us
                 </a>
                 <a
-                href="https://wa.me/919652216227?text=Hi%20Kayvora%20AI%2C%20I%27d%20like%20to%20know%20more%20about%20your%20AI%20automation%20services."
+                href="https://wa.me/919652216227?text=Hi%20Voltix%20AI%2C%20I%27d%20like%20to%20know%20more%20about%20your%20AI%20automation%20services."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3 text-sm font-semibold text-white hover:bg-white/[0.06]"

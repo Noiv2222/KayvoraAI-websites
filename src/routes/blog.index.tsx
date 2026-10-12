@@ -9,9 +9,9 @@ export const Route = createFileRoute("/blog/")({
   component: BlogIndex,
   head: () => ({
     meta: [
-      { title: "Blog & Resources — Kayvora AI" },
+      { title: "Blog & Resources — Voltix AI" },
       { name: "description", content: "Practical guides on AI voice agents, marketing automation, and local SEO for growing businesses." },
-      { property: "og:title", content: "Blog & Resources — Kayvora AI" },
+      { property: "og:title", content: "Blog & Resources — Voltix AI" },
       { property: "og:description", content: "Practical AI + growth playbooks for modern businesses." },
     ],
   }),

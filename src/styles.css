@@ -178,6 +178,26 @@
 }
 @utility animate-pulse-glow { animation: pulse-glow 4s ease-in-out infinite; }
 
+/* Voltix logo */
+@keyframes voltix-spin { to { transform: rotate(360deg) } }
+@keyframes voltix-flicker {
+  0%, 18%, 22%, 62%, 66%, 100% { opacity: 1 }
+  20%, 64% { opacity: 0.35 }
+}
+@keyframes voltix-twinkle {
+  0%, 100% { opacity: 0; transform: scale(0.4) }
+  50% { opacity: 1; transform: scale(1.2) }
+}
+.voltix-spin { transform-origin: 50px 50px; animation: voltix-spin 9s linear infinite; }
+.voltix-flicker { animation: voltix-flicker 3.2s steps(1, end) infinite; }
+.voltix-spark { transform-box: fill-box; transform-origin: center; animation: voltix-twinkle 2.4s ease-in-out infinite; }
+.voltix-spark-2 { animation-delay: 0.6s; }
+.voltix-spark-3 { animation-delay: 1.2s; }
+.voltix-spark-4 { animation-delay: 1.8s; }
+.voltix-mark { transition: transform 0.3s ease; }
+.group:hover .voltix-mark { transform: scale(1.08) rotate(-4deg); }
+.group:hover .voltix-spin { animation-duration: 2s; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.001ms !important;

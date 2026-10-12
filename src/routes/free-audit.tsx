@@ -44,9 +44,9 @@ function Header() {
     <header className="relative px-6 py-6">
       <div className="mx-auto max-w-6xl flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Logo size={34} />
+          <Logo size={34} withText={false} />
           <span className="font-['Sora'] font-semibold text-lg text-white tracking-tight">
-            Kayvora AI{' '}
+            Voltix AI{' '}
             <span className="text-cyan-300">(FREE AUDIT)</span>
           </span>
         </div>
@@ -94,7 +94,7 @@ function Hero() {
           </h1>
 
           <p className="mt-6 text-lg text-slate-300 font-['Inter'] max-w-xl">
-            Kayvora AI runs a full diagnostic on your website, SEO, lead flow, and
+            Voltix AI runs a full diagnostic on your website, SEO, lead flow, and
             automation gaps — then hands you a plain-English roadmap for fixing
             what's leaking. Free, and yours in 48 hours.
           </p>
@@ -222,7 +222,7 @@ function HowItWorks() {
 
 // ─────────────────────────────────────────────────────────────
 // FORM — submits to Web3Forms (same access key already used
-// on the Kayvora AI contact form).
+// on the Voltix AI contact form).
 // ─────────────────────────────────────────────────────────────
 type FormStatus = 'idle' | 'submitting' | 'success' | 'error'
 
@@ -249,8 +249,8 @@ function AuditForm() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           access_key: WEB3FORMS_KEY,
-          subject: 'New Free Audit Request — Kayvora AI',
-          from_name: 'Kayvora AI — Free Audit Form',
+          subject: 'New Free Audit Request — Voltix AI',
+          from_name: 'Voltix AI — Free Audit Form',
           name: values.name,
           email: values.email,
           business_name: values.business,

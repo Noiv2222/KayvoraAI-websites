@@ -11,12 +11,12 @@ export const Route = createFileRoute("/blog/$slug")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Not found — Kayvora AI" }, { name: "robots", content: "noindex" }] };
+      return { meta: [{ title: "Not found — Voltix AI" }, { name: "robots", content: "noindex" }] };
     }
     const { post } = loaderData;
     return {
       meta: [
-        { title: `${post.title} — Kayvora AI` },
+        { title: `${post.title} — Voltix AI` },
         { name: "description", content: post.excerpt },
         { property: "og:title", content: post.title },
         { property: "og:description", content: post.excerpt },
@@ -31,7 +31,7 @@ export const Route = createFileRoute("/blog/$slug")({
             headline: post.title,
             description: post.excerpt,
             datePublished: post.date,
-            author: { "@type": "Organization", name: "Kayvora AI" },
+            author: { "@type": "Organization", name: "Voltix AI" },
           }),
         },
       ],

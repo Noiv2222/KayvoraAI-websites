@@ -100,7 +100,7 @@ export function ChatWidget() {
                 <Sparkles size={16} className="text-white" />
               </div>
               <div className="min-w-0 flex-1">
-                <div className="text-sm font-semibold text-white">Kayvora AI</div>
+                <div className="text-sm font-semibold text-white">Voltix AI</div>
                 <div className="flex items-center gap-1.5 text-[11px] text-white/60">
                   <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brand-green" />
                   Online · Replies instantly
@@ -113,7 +113,7 @@ export function ChatWidget() {
               {messages.length === 0 && (
                 <div className="space-y-3">
                   <div className="rounded-2xl rounded-tl-sm bg-white/[0.04] px-3.5 py-2.5 text-sm text-white/85">
-                    Hey! I'm Kayvora AI's assistant. Ask me about our services, pricing, or how we can automate your business. 🚀
+                    Hey! I'm Voltix AI's assistant. Ask me about our services, pricing, or how we can automate your business. 🚀
                   </div>
                   <div className="flex flex-wrap gap-1.5 pt-1">
                     {STARTERS.map((s) => (
@@ -212,7 +212,7 @@ export function ChatWidget() {
                   <Send size={16} />
                 </button>
               </div>
-              <p className="mt-1.5 text-[10px] text-white/40">Powered by Kayvora AI</p>
+              <p className="mt-1.5 text-[10px] text-white/40">Powered by Voltix AI</p>
             </form>
           </motion.div>
         )}

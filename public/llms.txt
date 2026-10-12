@@ -1,6 +1,6 @@
-# Kayvora AI
+# Voltix AI
 
-> Kayvora AI builds AI Voice Agents, Chatbots, Websites, Funnels, SEO, and Business Automations for growing businesses.
+> Voltix AI builds AI Voice Agents, Chatbots, Websites, Funnels, SEO, and Business Automations for growing businesses.
 
 ## Pages
 

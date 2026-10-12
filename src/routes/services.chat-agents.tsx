@@ -39,9 +39,9 @@ export const Route = createFileRoute("/services/chat-agents")({
   ),
   head: () => ({
     meta: [
-      { title: "AI Chat Agents — Kayvora AI" },
+      { title: "AI Chat Agents — Voltix AI" },
       { name: "description", content: "AI chat for your website, WhatsApp, Instagram, and Messenger — capture, qualify, and route every message." },
-      { property: "og:title", content: "AI Chat Agents — Kayvora AI" },
+      { property: "og:title", content: "AI Chat Agents — Voltix AI" },
       { property: "og:description", content: "A chat agent that never sleeps, never misses a message." },
     ],
   }),

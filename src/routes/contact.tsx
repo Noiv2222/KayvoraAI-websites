@@ -10,9 +10,9 @@ export const Route = createFileRoute("/contact")({
   component: ContactPage,
   head: () => ({
     meta: [
-      { title: "Contact — Kayvora AI" },
-      { name: "description", content: "Book a free strategy call with Kayvora AI. Fast response, tailored AI solutions." },
-      { property: "og:title", content: "Contact — Kayvora AI" },
+      { title: "Contact — Voltix AI" },
+      { name: "description", content: "Book a free strategy call with Voltix AI. Fast response, tailored AI solutions." },
+      { property: "og:title", content: "Contact — Voltix AI" },
       { property: "og:description", content: "Reach out — we typically reply the same day." },
     ],
   }),
@@ -27,7 +27,7 @@ function ContactPage() {
     const form = e.currentTarget;
     const formData = new FormData(form);
     formData.append("access_key", WEB3FORMS_ACCESS_KEY);
-    formData.append("subject", "New message from Kayvora AI website");
+    formData.append("subject", "New message from Voltix AI website");
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
@@ -118,7 +118,7 @@ function ContactPage() {
           <Reveal delay={1}>
             <div className="space-y-4">
               <ChannelCard icon={Calendar} title="Book a call" desc="30-min free strategy session." cta="Calendly" href="https://calendly.com/kayvora-ai/30min" primary />
-              <ChannelCard icon={Phone} title="WhatsApp" desc="Chat with us anytime." cta="Open WhatsApp" href="https://wa.me/919652216227?text=Hi%20Kayvora%20AI%2C%20I%27d%20like%20to%20know%20more%20about%20your%20AI%20automation%20services." />
+              <ChannelCard icon={Phone} title="WhatsApp" desc="Chat with us anytime." cta="Open WhatsApp" href="https://wa.me/919652216227?text=Hi%20Voltix%20AI%2C%20I%27d%20like%20to%20know%20more%20about%20your%20AI%20automation%20services." />
               <ChannelCard icon={Mail} title="Email" desc="kayvora.ai@gmail.com" cta="Send email" href="mailto:kayvora.ai@gmail.com" />
 
               <div className="glass rounded-2xl p-5">

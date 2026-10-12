@@ -6,16 +6,16 @@ export const Route = createFileRoute("/privacy")({
   component: PrivacyPage,
   head: () => ({
     meta: [
-      { title: "Privacy Policy — Kayvora AI" },
+      { title: "Privacy Policy — Voltix AI" },
       {
         name: "description",
         content:
-          "Kayvora AI's Privacy Policy — what information we collect, how we use it, and your rights.",
+          "Voltix AI's Privacy Policy — what information we collect, how we use it, and your rights.",
       },
-      { property: "og:title", content: "Privacy Policy — Kayvora AI" },
+      { property: "og:title", content: "Privacy Policy — Voltix AI" },
       {
         property: "og:description",
-        content: "How Kayvora AI collects, uses, and protects your information.",
+        content: "How Voltix AI collects, uses, and protects your information.",
       },
     ],
   }),
@@ -149,7 +149,7 @@ function PrivacyPage() {
       <section className="relative mx-auto max-w-3xl px-4 pb-24 sm:px-6">
         <Reveal>
           <p className="text-white/70">
-            Welcome to Kayvora AI. At Kayvora AI, we value your privacy and are
+            Welcome to Voltix AI. At Voltix AI, we value your privacy and are
             committed to protecting your personal information. This Privacy
             Policy explains what information we collect, how we use it, and
             your rights.
@@ -186,7 +186,7 @@ function PrivacyPage() {
               <h2 className="font-display text-xl font-semibold text-white">
                 10. Contact
               </h2>
-              <p className="mt-3 text-white/70">Kayvora AI</p>
+              <p className="mt-3 text-white/70">Voltix AI</p>
               <a
                 href="mailto:kayvora.ai@gmail.com"
                 className="mt-1 inline-block text-brand-cyan hover:text-white"

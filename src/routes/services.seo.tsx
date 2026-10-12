@@ -39,9 +39,9 @@ export const Route = createFileRoute("/services/seo")({
   ),
   head: () => ({
     meta: [
-      { title: "AI SEO — Kayvora AI" },
+      { title: "AI SEO — Voltix AI" },
       { name: "description", content: "Local + technical SEO with AI content strategy — get found for the searches that matter." },
-      { property: "og:title", content: "AI SEO — Kayvora AI" },
+      { property: "og:title", content: "AI SEO — Voltix AI" },
       { property: "og:description", content: "Get found. Get chosen. Get booked." },
     ],
   }),
