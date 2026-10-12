@@ -14,17 +14,20 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PricingRouteImport } from './routes/pricing'
+import { Route as FreeAuditRouteImport } from './routes/free-audit'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ServicesIndexRouteImport } from './routes/services.index'
+import { Route as PortfolioIndexRouteImport } from './routes/portfolio/index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as ServicesWebsitesRouteImport } from './routes/services.websites'
 import { Route as ServicesVoiceAgentsRouteImport } from './routes/services.voice-agents'
 import { Route as ServicesSeoRouteImport } from './routes/services.seo'
 import { Route as ServicesChatAgentsRouteImport } from './routes/services.chat-agents'
 import { Route as ServicesAutomationRouteImport } from './routes/services.automation'
+import { Route as PortfolioSlugRouteImport } from './routes/portfolio/$slug'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
 
@@ -53,6 +56,11 @@ const PricingRoute = PricingRouteImport.update({
   path: '/pricing',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FreeAuditRoute = FreeAuditRouteImport.update({
+  id: '/free-audit',
+  path: '/free-audit',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
@@ -77,6 +85,11 @@ const ServicesIndexRoute = ServicesIndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => ServicesRoute,
+} as any)
+const PortfolioIndexRoute = PortfolioIndexRouteImport.update({
+  id: '/portfolio/',
+  path: '/portfolio/',
+  getParentRoute: () => rootRouteImport,
 } as any)
 const BlogIndexRoute = BlogIndexRouteImport.update({
   id: '/',
@@ -108,6 +121,11 @@ const ServicesAutomationRoute = ServicesAutomationRouteImport.update({
   path: '/automation',
   getParentRoute: () => ServicesRoute,
 } as any)
+const PortfolioSlugRoute = PortfolioSlugRouteImport.update({
+  id: '/portfolio/$slug',
+  path: '/portfolio/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogSlugRoute = BlogSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
@@ -124,6 +142,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
+  '/free-audit': typeof FreeAuditRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRouteWithChildren
@@ -131,30 +150,35 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/api/chat': typeof ApiChatRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/portfolio/$slug': typeof PortfolioSlugRoute
   '/services/automation': typeof ServicesAutomationRoute
   '/services/chat-agents': typeof ServicesChatAgentsRoute
   '/services/seo': typeof ServicesSeoRoute
   '/services/voice-agents': typeof ServicesVoiceAgentsRoute
   '/services/websites': typeof ServicesWebsitesRoute
   '/blog/': typeof BlogIndexRoute
+  '/portfolio/': typeof PortfolioIndexRoute
   '/services/': typeof ServicesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/free-audit': typeof FreeAuditRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/api/chat': typeof ApiChatRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/portfolio/$slug': typeof PortfolioSlugRoute
   '/services/automation': typeof ServicesAutomationRoute
   '/services/chat-agents': typeof ServicesChatAgentsRoute
   '/services/seo': typeof ServicesSeoRoute
   '/services/voice-agents': typeof ServicesVoiceAgentsRoute
   '/services/websites': typeof ServicesWebsitesRoute
   '/blog': typeof BlogIndexRoute
+  '/portfolio': typeof PortfolioIndexRoute
   '/services': typeof ServicesIndexRoute
 }
 export interface FileRoutesById {
@@ -163,6 +187,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/blog': typeof BlogRouteWithChildren
   '/contact': typeof ContactRoute
+  '/free-audit': typeof FreeAuditRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/services': typeof ServicesRouteWithChildren
@@ -170,12 +195,14 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/api/chat': typeof ApiChatRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/portfolio/$slug': typeof PortfolioSlugRoute
   '/services/automation': typeof ServicesAutomationRoute
   '/services/chat-agents': typeof ServicesChatAgentsRoute
   '/services/seo': typeof ServicesSeoRoute
   '/services/voice-agents': typeof ServicesVoiceAgentsRoute
   '/services/websites': typeof ServicesWebsitesRoute
   '/blog/': typeof BlogIndexRoute
+  '/portfolio/': typeof PortfolioIndexRoute
   '/services/': typeof ServicesIndexRoute
 }
 export interface FileRouteTypes {
@@ -185,6 +212,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/blog'
     | '/contact'
+    | '/free-audit'
     | '/pricing'
     | '/privacy'
     | '/services'
@@ -192,30 +220,35 @@ export interface FileRouteTypes {
     | '/terms'
     | '/api/chat'
     | '/blog/$slug'
+    | '/portfolio/$slug'
     | '/services/automation'
     | '/services/chat-agents'
     | '/services/seo'
     | '/services/voice-agents'
     | '/services/websites'
     | '/blog/'
+    | '/portfolio/'
     | '/services/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
     | '/contact'
+    | '/free-audit'
     | '/pricing'
     | '/privacy'
     | '/sitemap.xml'
     | '/terms'
     | '/api/chat'
     | '/blog/$slug'
+    | '/portfolio/$slug'
     | '/services/automation'
     | '/services/chat-agents'
     | '/services/seo'
     | '/services/voice-agents'
     | '/services/websites'
     | '/blog'
+    | '/portfolio'
     | '/services'
   id:
     | '__root__'
@@ -223,6 +256,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/blog'
     | '/contact'
+    | '/free-audit'
     | '/pricing'
     | '/privacy'
     | '/services'
@@ -230,12 +264,14 @@ export interface FileRouteTypes {
     | '/terms'
     | '/api/chat'
     | '/blog/$slug'
+    | '/portfolio/$slug'
     | '/services/automation'
     | '/services/chat-agents'
     | '/services/seo'
     | '/services/voice-agents'
     | '/services/websites'
     | '/blog/'
+    | '/portfolio/'
     | '/services/'
   fileRoutesById: FileRoutesById
 }
@@ -244,12 +280,15 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   BlogRoute: typeof BlogRouteWithChildren
   ContactRoute: typeof ContactRoute
+  FreeAuditRoute: typeof FreeAuditRoute
   PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
   ServicesRoute: typeof ServicesRouteWithChildren
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
   ApiChatRoute: typeof ApiChatRoute
+  PortfolioSlugRoute: typeof PortfolioSlugRoute
+  PortfolioIndexRoute: typeof PortfolioIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -289,6 +328,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PricingRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/free-audit': {
+      id: '/free-audit'
+      path: '/free-audit'
+      fullPath: '/free-audit'
+      preLoaderRoute: typeof FreeAuditRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contact': {
       id: '/contact'
       path: '/contact'
@@ -323,6 +369,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/services/'
       preLoaderRoute: typeof ServicesIndexRouteImport
       parentRoute: typeof ServicesRoute
+    }
+    '/portfolio/': {
+      id: '/portfolio/'
+      path: '/portfolio'
+      fullPath: '/portfolio/'
+      preLoaderRoute: typeof PortfolioIndexRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/blog/': {
       id: '/blog/'
@@ -365,6 +418,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/services/automation'
       preLoaderRoute: typeof ServicesAutomationRouteImport
       parentRoute: typeof ServicesRoute
+    }
+    '/portfolio/$slug': {
+      id: '/portfolio/$slug'
+      path: '/portfolio/$slug'
+      fullPath: '/portfolio/$slug'
+      preLoaderRoute: typeof PortfolioSlugRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/blog/$slug': {
       id: '/blog/$slug'
@@ -422,12 +482,15 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   BlogRoute: BlogRouteWithChildren,
   ContactRoute: ContactRoute,
+  FreeAuditRoute: FreeAuditRoute,
   PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
   ServicesRoute: ServicesRouteWithChildren,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
   ApiChatRoute: ApiChatRoute,
+  PortfolioSlugRoute: PortfolioSlugRoute,
+  PortfolioIndexRoute: PortfolioIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

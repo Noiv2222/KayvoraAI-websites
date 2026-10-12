@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://kayvora-ai.kayvora.workers.dev/sitemap.xml

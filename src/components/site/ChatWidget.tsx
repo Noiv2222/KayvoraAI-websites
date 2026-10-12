@@ -199,6 +199,7 @@ export function ChatWidget() {
                     }
                   }}
                   rows={1}
+                  maxLength={1000}
                   placeholder="Ask about services, pricing…"
                   className="max-h-32 flex-1 resize-none rounded-xl border border-white/10 bg-white/[0.04] px-3 py-2.5 text-[15px] text-white placeholder:text-white/30 outline-none focus:border-brand-cyan/50 sm:text-sm"
                 />
